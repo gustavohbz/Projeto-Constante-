@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brauza LTDA </title>
+        
+        <style>
+            
+          body{
+            background-color:rgba(255, 249, 239, 0.934);
+            font:normal 22pt;
+          }
+          div#area {
+             font:normal 20pt Comic;
+            color:rgb(255, 255, 255);
+            background:rgba(14, 241, 33, 0.931);
+            width: 200px;
+            height:200px;
+            line-height: 200px;
+            text-align:center 
+          }
+          
+        </style>
+<h1> Esse é o teste funções</h1>
+<p1>Olá aqui é o Gustavo,Aluno de Análise e Desenvolvimento de Sistemas e estou desenvolvendo esse site!<br>Ele será composto por várias partes e estará constantemente em <strong>mudança</strong>,pois a cada conteúdo aprendido irei implementa-lo aqui!<br>
+</p1>
+    <h2>Por enquanto ele conta com os seguintes conhecimentos:</h2>
+    <p2>Noções de HTML e Css.<br>
+        Em JavaScript:<br>
+        Variáveis;<br>Uso e Manipulação de Dados;Janela de Avisos<br>Operadores;<br>DOM e Eventos;<br>Seleção de Elementos e Manipulação;<br>Funções.
+
+    </p2>
+
+
+<div id='area'>
+Interaja
+</div>
+
+</head>
+<body>
+    <script>//janela de interação
+   let a=window.prompt("Olá,Me diga seu Nome")
+   if (a=="Gustavo") {
+   window.alert(`Olá, ${a}...${a}? Que loucura parece que somos Xarás,eu também me chamo Gustavo :)`)
+   window.alert(`Olá, ${a} , Espero que goste do meu projeto, ele está no início.`)
+   window.alert(`Mas não esquenta, ele vai melhorar`)
+   }
+   if (a!="Gustavo"){
+    window.alert(`Olá, ${a} ,Espero que goste do meu projeto, ele está no início.`)
+   window.alert(`Mas não esquenta,ele vai melhorar`)
+
+   }
+    </script>
+    <script>
+        var b=window.document.querySelector('#area')
+        b.addEventListener('click',clicar)
+        b.addEventListener('mouseenter',entrar)
+        b.addEventListener('mouseout',sair)
+
+        //ajuste de funções de interação
+        function clicar(){
+            b.innerText = 'clicou!';
+            b.style.background = 'red';
+        }
+        function entrar(){
+            b.innerText = "entrou!";
+            b.style.background = 'blue';
+        }
+        function sair(){
+            b.innerText = 'Saiu?Volta aqui!';
+            b.style.background = 'brown';
+        }
+
+    </script>
+</body>
+</html>
